@@ -94,57 +94,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a1a0f] text-white overflow-x-hidden" style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}>
-
-      {/* ── Google Fonts ── */}
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        * { font-family: 'Inter', sans-serif; }
-        @keyframes fadeUp   { from { opacity:0; transform:translateY(40px) } to { opacity:1; transform:translateY(0) } }
-        @keyframes fadeIn   { from { opacity:0 } to { opacity:1 } }
-        @keyframes float    { 0%,100% { transform:translateY(0) } 50% { transform:translateY(-12px) } }
-        @keyframes shimmer  { 0% { background-position:200% center } 100% { background-position:-200% center } }
-        .anim-fade-up   { animation: fadeUp  0.8s ease forwards; }
-        .anim-fade-in   { animation: fadeIn  1.2s ease forwards; }
-        .anim-float     { animation: float   4s ease-in-out infinite; }
-        .delay-100 { animation-delay:0.1s; opacity:0; }
-        .delay-200 { animation-delay:0.2s; opacity:0; }
-        .delay-300 { animation-delay:0.3s; opacity:0; }
-        .delay-400 { animation-delay:0.4s; opacity:0; }
-        .delay-500 { animation-delay:0.5s; opacity:0; }
-        .delay-600 { animation-delay:0.6s; opacity:0; }
-        .shimmer-text {
-          background: linear-gradient(90deg, #86efac, #4ade80, #86efac, #4ade80);
-          background-size: 200% auto;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: shimmer 3s linear infinite;
-        }
-        .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08); }
-        .btn-primary {
-          background: linear-gradient(135deg, #16a34a, #15803d);
-          box-shadow: 0 0 30px rgba(22,163,74,0.4);
-          transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 0 50px rgba(22,163,74,0.6);
-        }
-        .btn-secondary {
-          background: rgba(255,255,255,0.06);
-          border: 1px solid rgba(255,255,255,0.15);
-          backdrop-filter: blur(10px);
-          transition: all 0.3s ease;
-        }
-        .btn-secondary:hover {
-          background: rgba(255,255,255,0.12);
-          border-color: rgba(255,255,255,0.3);
-          transform: translateY(-2px);
-        }
-        .step-connector { background: linear-gradient(90deg, #16a34a, #4ade80); }
-        .section-fade { opacity:0; transform:translateY(30px); transition: all 0.8s ease; }
-        .section-fade.visible { opacity:1; transform:translateY(0); }
-      `}</style>
+    <div className="min-h-screen bg-[#0a1a0f] text-white overflow-x-hidden">
 
       {/* ══════════════════════════════════════════════════════
           NAVBAR
